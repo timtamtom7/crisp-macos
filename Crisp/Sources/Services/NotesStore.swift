@@ -66,7 +66,7 @@ class NotesStore: ObservableObject {
     }
 
     func audioFileURL(for fileName: String) -> URL {
-        let dir = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
+        let dir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         return dir.appendingPathComponent("Crisp").appendingPathComponent(fileName)
     }
 }

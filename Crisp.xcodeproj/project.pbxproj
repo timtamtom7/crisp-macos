@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0438E09D58518DBBB9183ED3 /* CrispApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA55799D539CBF9921B082FE /* CrispApp.swift */; };
+		0569E841A869CC96248F9A94 /* NotesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDACFF8C15C5453CCC80505 /* NotesStore.swift */; };
+		3E63E5EAD4EA92A041A07DD2 /* CaptureDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B09B593ED087FCB442A98AD /* CaptureDetailView.swift */; };
+		4909FBBE60ACCC6CEAE66E8F /* AIVoiceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21F9D01C20229D5F9E96D6D /* AIVoiceService.swift */; };
+		6022475C5A3F828D2D664514 /* WaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE46141B07096F8D5F085D0 /* WaveformView.swift */; };
+		628EBB17D96D59DF16E25FE2 /* VoiceCaptureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F12B764014252551C9AAE597 /* VoiceCaptureService.swift */; };
+		8C57E554EC3B84D2B7EC64C5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1F5C4094A2FE76EEDA6F393 /* AVFoundation.framework */; };
+		90C72DD3A231EBC9D886331B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84515305A495B03151A5FA05 /* ContentView.swift */; };
+		938E242392F77EBF27E659A3 /* AudioPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AED51BE9A73639875524AF2 /* AudioPlayerService.swift */; };
+		9552F060FDFBA04126163D9C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80D535525C444C902CF106DA /* SwiftUI.framework */; };
+		AA062724E878223650259F43 /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F205FF2AB815941DBA2A5F6D /* RecordButton.swift */; };
+		B0448A424F4765D39319B8F2 /* DesignTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB12B3B034AE8D9B79E6029B /* DesignTokens.swift */; };
+		B6A51C5FACD9BAB142A3671B /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4591DED1182783117FF82698 /* Speech.framework */; };
+		C40A29F6AE347BDFFB70E224 /* CaptureNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291B8203E683E68738E7B4B2 /* CaptureNote.swift */; };
+		D2D564A2B8D162959BF285DF /* CaptureListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 255F1AF85B331E8DE20E0227 /* CaptureListView.swift */; };
+		EBA6AE8DE7BBDCB66C5312A0 /* NaturalLanguage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE45F132C356C87D84BB9235 /* NaturalLanguage.framework */; };
+		FD9A9ADE1D082B1E0447BF0C /* RecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE9328CF0C386F4DFEA7F91 /* RecordView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		255F1AF85B331E8DE20E0227 /* CaptureListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureListView.swift; sourceTree = "<group>"; };
+		291B8203E683E68738E7B4B2 /* CaptureNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureNote.swift; sourceTree = "<group>"; };
+		2B09B593ED087FCB442A98AD /* CaptureDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureDetailView.swift; sourceTree = "<group>"; };
+		428C80064479FC6E133CE861 /* Crisp.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Crisp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4591DED1182783117FF82698 /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = System/Library/Frameworks/Speech.framework; sourceTree = SDKROOT; };
+		5C4E2E9B518C8D886C35FEF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		80D535525C444C902CF106DA /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		84515305A495B03151A5FA05 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		9AE9328CF0C386F4DFEA7F91 /* RecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordView.swift; sourceTree = "<group>"; };
+		9AED51BE9A73639875524AF2 /* AudioPlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerService.swift; sourceTree = "<group>"; };
+		9DDACFF8C15C5453CCC80505 /* NotesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesStore.swift; sourceTree = "<group>"; };
+		A21F9D01C20229D5F9E96D6D /* AIVoiceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIVoiceService.swift; sourceTree = "<group>"; };
+		ADE46141B07096F8D5F085D0 /* WaveformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformView.swift; sourceTree = "<group>"; };
+		BB12B3B034AE8D9B79E6029B /* DesignTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTokens.swift; sourceTree = "<group>"; };
+		C1F5C4094A2FE76EEDA6F393 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		DA55799D539CBF9921B082FE /* CrispApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrispApp.swift; sourceTree = "<group>"; };
+		F12B764014252551C9AAE597 /* VoiceCaptureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceCaptureService.swift; sourceTree = "<group>"; };
+		F205FF2AB815941DBA2A5F6D /* RecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
+		FE45F132C356C87D84BB9235 /* NaturalLanguage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NaturalLanguage.framework; path = System/Library/Frameworks/NaturalLanguage.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		12ACE31107FC4EF11CB10F4B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9552F060FDFBA04126163D9C /* SwiftUI.framework in Frameworks */,
+				8C57E554EC3B84D2B7EC64C5 /* AVFoundation.framework in Frameworks */,
+				B6A51C5FACD9BAB142A3671B /* Speech.framework in Frameworks */,
+				EBA6AE8DE7BBDCB66C5312A0 /* NaturalLanguage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		165F2B7813593FABCA0765CF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2B09B593ED087FCB442A98AD /* CaptureDetailView.swift */,
+				255F1AF85B331E8DE20E0227 /* CaptureListView.swift */,
+				84515305A495B03151A5FA05 /* ContentView.swift */,
+				DA55799D539CBF9921B082FE /* CrispApp.swift */,
+				9AE9328CF0C386F4DFEA7F91 /* RecordView.swift */,
+				50B9D6A0D5F08218D3A57248 /* Components */,
+			);
+			name = Views;
+			path = Crisp/Sources/Views;
+			sourceTree = "<group>";
+		};
+		469898404A1541E4A55DB6BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				428C80064479FC6E133CE861 /* Crisp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50B9D6A0D5F08218D3A57248 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F205FF2AB815941DBA2A5F6D /* RecordButton.swift */,
+				ADE46141B07096F8D5F085D0 /* WaveformView.swift */,
+			);
+			name = Components;
+			path = Crisp/Sources/Views/Components;
+			sourceTree = "<group>";
+		};
+		5FAA746C4B7CED4E9E297749 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A21F9D01C20229D5F9E96D6D /* AIVoiceService.swift */,
+				9AED51BE9A73639875524AF2 /* AudioPlayerService.swift */,
+				9DDACFF8C15C5453CCC80505 /* NotesStore.swift */,
+				F12B764014252551C9AAE597 /* VoiceCaptureService.swift */,
+			);
+			name = Services;
+			path = Crisp/Sources/Services;
+			sourceTree = "<group>";
+		};
+		7A450D8A08AABC274230758C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5C4E2E9B518C8D886C35FEF0 /* Info.plist */,
+			);
+			name = Resources;
+			path = Crisp/Resources;
+			sourceTree = "<group>";
+		};
+		8FDA48C6E2D90660E931C5BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C1F5C4094A2FE76EEDA6F393 /* AVFoundation.framework */,
+				FE45F132C356C87D84BB9235 /* NaturalLanguage.framework */,
+				4591DED1182783117FF82698 /* Speech.framework */,
+				80D535525C444C902CF106DA /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C52A5D74E8DC4E74D435E1BE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				291B8203E683E68738E7B4B2 /* CaptureNote.swift */,
+				BB12B3B034AE8D9B79E6029B /* DesignTokens.swift */,
+			);
+			name = Models;
+			path = Crisp/Sources/Models;
+			sourceTree = "<group>";
+		};
+		F271DF779E8E4FB86C23455B = {
+			isa = PBXGroup;
+			children = (
+				50B9D6A0D5F08218D3A57248 /* Components */,
+				C52A5D74E8DC4E74D435E1BE /* Models */,
+				7A450D8A08AABC274230758C /* Resources */,
+				5FAA746C4B7CED4E9E297749 /* Services */,
+				165F2B7813593FABCA0765CF /* Views */,
+				8FDA48C6E2D90660E931C5BA /* Frameworks */,
+				469898404A1541E4A55DB6BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C374F66A874A8D7517F66E3 /* Crisp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3AA104638FC8891AC8DF8D2 /* Build configuration list for PBXNativeTarget "Crisp" */;
+			buildPhases = (
+				CDEE75F437D74BDBE61112A3 /* Sources */,
+				12ACE31107FC4EF11CB10F4B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Crisp;
+			productName = Crisp;
+			productReference = 428C80064479FC6E133CE861 /* Crisp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A4E550EF28423E788C17C4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 2BC39E6AF4FA667C0C19D404 /* Build configuration list for PBXProject "Crisp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = F271DF779E8E4FB86C23455B;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C374F66A874A8D7517F66E3 /* Crisp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CDEE75F437D74BDBE61112A3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4909FBBE60ACCC6CEAE66E8F /* AIVoiceService.swift in Sources */,
+				938E242392F77EBF27E659A3 /* AudioPlayerService.swift in Sources */,
+				3E63E5EAD4EA92A041A07DD2 /* CaptureDetailView.swift in Sources */,
+				D2D564A2B8D162959BF285DF /* CaptureListView.swift in Sources */,
+				C40A29F6AE347BDFFB70E224 /* CaptureNote.swift in Sources */,
+				90C72DD3A231EBC9D886331B /* ContentView.swift in Sources */,
+				0438E09D58518DBBB9183ED3 /* CrispApp.swift in Sources */,
+				B0448A424F4765D39319B8F2 /* DesignTokens.swift in Sources */,
+				0569E841A869CC96248F9A94 /* NotesStore.swift in Sources */,
+				AA062724E878223650259F43 /* RecordButton.swift in Sources */,
+				FD9A9ADE1D082B1E0447BF0C /* RecordView.swift in Sources */,
+				628EBB17D96D59DF16E25FE2 /* VoiceCaptureService.swift in Sources */,
+				6022475C5A3F828D2D664514 /* WaveformView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0E303672F07857EBB09BFE0D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		6F8E7306E982C3BE5ECA597A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Crisp/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crisp.ios;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A72EA9EBEEBF05DE3A630AD4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		E599615A60A7A479D66F477B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Crisp/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crisp.ios;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BC39E6AF4FA667C0C19D404 /* Build configuration list for PBXProject "Crisp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A72EA9EBEEBF05DE3A630AD4 /* Debug */,
+				0E303672F07857EBB09BFE0D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B3AA104638FC8891AC8DF8D2 /* Build configuration list for PBXNativeTarget "Crisp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E599615A60A7A479D66F477B /* Debug */,
+				6F8E7306E982C3BE5ECA597A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A4E550EF28423E788C17C4A /* Project object */;
+}

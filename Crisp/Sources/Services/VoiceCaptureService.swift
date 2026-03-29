@@ -1,6 +1,7 @@
 import AVFoundation
 import Speech
 import Combine
+import UIKit
 
 @MainActor
 class VoiceCaptureService: ObservableObject {
@@ -20,6 +21,7 @@ class VoiceCaptureService: ObservableObject {
     private var recordingStartTime: Date?
     private var waveformTimer: Timer?
     private var speechRecognizer: SFSpeechRecognizer?
+    private let audioSession = AVAudioSession.sharedInstance()
 
     private let waveformBarCount = 28
 
@@ -38,14 +40,17 @@ class VoiceCaptureService: ObservableObject {
     func startRecording() throws {
         guard !isRecording else { return }
 
+        try audioSession.setCategory(.playAndRecord, mode: .default, options: [.defaultToSpeaker, .allowBluetooth])
+        try audioSession.setActive(true)
+
         audioEngine = AVAudioEngine()
         guard let audioEngine = audioEngine else { return }
 
         inputNode = audioEngine.inputNode
         guard let inputNode = inputNode else { return }
 
-        let recordingDir = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask).first!
-        let crispDir = recordingDir.appendingPathComponent("Crisp", isDirectory: true)
+        let documentsDir = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        let crispDir = documentsDir.appendingPathComponent("Crisp", isDirectory: true)
         try? FileManager.default.createDirectory(at: crispDir, withIntermediateDirectories: true)
 
         let fileName = "capture_\(UUID().uuidString).m4a"
@@ -66,10 +71,6 @@ class VoiceCaptureService: ObservableObject {
         guard let recognitionRequest = recognitionRequest else { return }
         recognitionRequest.shouldReportPartialResults = true
         recognitionRequest.requiresOnDeviceRecognition = false
-
-        if #available(macOS 16.0, *) {
-            recognitionRequest.addsPunctuation = true
-        }
 
         let format = inputNode.outputFormat(forBus: 0)
 
@@ -115,6 +116,9 @@ class VoiceCaptureService: ObservableObject {
         stopWaveformAnimation()
 
         audioFile = nil
+
+        try? audioSession.setActive(false)
+
         return recordingURL
     }
 
@@ -163,10 +167,6 @@ class VoiceCaptureService: ObservableObject {
             let request = SFSpeechURLRecognitionRequest(url: audioURL)
             request.shouldReportPartialResults = false
             request.requiresOnDeviceRecognition = false
-
-            if #available(macOS 16.0, *) {
-                request.addsPunctuation = true
-            }
 
             let task = recognizer.recognitionTask(with: request) { result, error in
                 if let result = result, result.isFinal {

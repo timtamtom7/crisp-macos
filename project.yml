@@ -1,32 +1,40 @@
-name: CrispMac
+name: Crisp
 options:
   bundleIdPrefix: com.crisp
   deploymentTarget:
-    macOS: "15.0"
+    iOS: "26.0"
+  xcodeVersion: "16.0"
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    CODE_SIGN_IDENTITY: "-"
+    CODE_SIGNING_REQUIRED: NO
+    CODE_SIGNING_ALLOWED: NO
 
 targets:
-  CrispMac:
+  Crisp:
     type: application
-    platform: macOS
+    platform: iOS
     sources:
-      - path: CrispMac/Sources
-      - path: CrispMac/Services
       - path: Crisp/Sources/Models
       - path: Crisp/Sources/Services
-      - path: Crisp/Sources/ViewModels
       - path: Crisp/Sources/Views/Components
       - path: Crisp/Resources
+      - path: Crisp/Sources/Views
     settings:
       base:
-        PRODUCT_BUNDLE_IDENTIFIER: com.crisp.macos
+        PRODUCT_BUNDLE_IDENTIFIER: com.crisp.ios
         MARKETING_VERSION: "1.0.0"
-        SWIFT_VERSION: "6.0"
-        MACOSX_DEPLOYMENT_TARGET: "15.0"
-        CODE_SIGN_IDENTITY: "-"
-        CODE_SIGNING_REQUIRED: NO
+        INFOPLIST_FILE: Crisp/Resources/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        SWIFT_EMIT_LOC_STRINGS: YES
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        LD_RUNPATH_SEARCH_PATHS: "$(inherited) @executable_path/Frameworks"
+        ENABLE_PREVIEWS: YES
     dependencies:
       - sdk: SwiftUI.framework
-      - sdk: AppKit.framework
       - sdk: AVFoundation.framework
       - sdk: Speech.framework
       - sdk: NaturalLanguage.framework
