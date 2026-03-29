@@ -19,6 +19,7 @@
 		764712E29799648373A048BF /* CrispMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0E405470F392EBB2431A56 /* CrispMacApp.swift */; };
 		7DCEA94DF22BB9F3141EE2EC /* AudioPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E384EE6DB497F2FC4CEF61A /* AudioPlayerService.swift */; };
 		8B97AD09498E71D1C478398F /* MacCaptureDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4EA266424F42F1328511AF /* MacCaptureDetailView.swift */; };
+		BB80EE75D670034F462E6CAF /* MacWaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FA1142C4FE856D90367A1D /* MacWaveformView.swift */; };
 		CD2E9519A9AA38082EBF49CF /* CaptureNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF0F68F1BC3AAB95D6FCDCB /* CaptureNote.swift */; };
 		D02C0F347A990736B1AEE7DA /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5401C69FC2A9A58AD78C6CE0 /* Speech.framework */; };
 		DF64C1EF7002396286A87649 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF4FB8567508EAF19DAA279 /* AppKit.framework */; };
@@ -40,6 +41,7 @@
 		BADB28BDECCF1AB7837C5A78 /* WaveformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformView.swift; sourceTree = "<group>"; };
 		BDF4FB8567508EAF19DAA279 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		C1B3EE99212B4082D6F2557B /* VoiceCaptureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceCaptureService.swift; sourceTree = "<group>"; };
+		C2FA1142C4FE856D90367A1D /* MacWaveformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacWaveformView.swift; sourceTree = "<group>"; };
 		D30CB67B3D58863F889A3E36 /* MacRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacRecordView.swift; sourceTree = "<group>"; };
 		E1F4BBFED8403748049E58BA /* NotesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesStore.swift; sourceTree = "<group>"; };
 		E90E4494A20CF8F7DA39D613 /* DesignTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTokens.swift; sourceTree = "<group>"; };
@@ -61,6 +63,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E73D558A1615880301C12B5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				66A733AE1898F7F0902543FF /* Components */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		494764DE4CA0B35AD04F595A /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +93,14 @@
 			);
 			sourceTree = "<group>";
 		};
+		66A733AE1898F7F0902543FF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C2FA1142C4FE856D90367A1D /* MacWaveformView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		681A3C27296C771A464F3934 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +109,7 @@
 				0DA6EC8FCF1D14F0807523E3 /* MacCaptureListView.swift */,
 				A9176083D0C54A25079B6289 /* MacContentView.swift */,
 				D30CB67B3D58863F889A3E36 /* MacRecordView.swift */,
+				0E73D558A1615880301C12B5 /* Views */,
 			);
 			name = Sources;
 			path = CrispMac/Sources;
@@ -215,6 +234,7 @@
 				355C1E3EEF1B7573617A4908 /* MacCaptureListView.swift in Sources */,
 				FE2847E82E5C18BF094765C9 /* MacContentView.swift in Sources */,
 				49FBA1B73A8205576D49F5F7 /* MacRecordView.swift in Sources */,
+				BB80EE75D670034F462E6CAF /* MacWaveformView.swift in Sources */,
 				1F75E42A99B7AEF5DDDCA4A0 /* NotesStore.swift in Sources */,
 				247237B47591D61AE6C97182 /* RecordButton.swift in Sources */,
 				0D0E0E39C55576E97424B06F /* VoiceCaptureService.swift in Sources */,

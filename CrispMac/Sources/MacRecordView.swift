@@ -30,14 +30,20 @@ struct MacRecordView: View {
                 Spacer()
 
                 // Waveform
-                VStack(spacing: 24) {
-                    WaveformView(
+                VStack(spacing: 20) {
+                    MacWaveformView(
                         levels: voiceService.waveformLevels,
                         isAnimating: voiceService.isRecording,
                         barCount: 28
                     )
                     .frame(height: 80)
                     .padding(.horizontal, 40)
+
+                    // Sound quality indicator
+                    SoundQualityIndicator(
+                        level: voiceService.currentLevel,
+                        isRecording: voiceService.isRecording
+                    )
 
                     // Status text
                     Text(statusText)
@@ -68,7 +74,7 @@ struct MacRecordView: View {
 
                 // Record button
                 VStack(spacing: 16) {
-                    RecordButton(isRecording: voiceService.isRecording) {
+                    MacRecordButton(isRecording: voiceService.isRecording) {
                         handleRecordTap()
                     }
                     .disabled(!isAuthorized)
