@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00870BE6D851A0AA9C7C25A6 /* DesignTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E4494A20CF8F7DA39D613 /* DesignTokens.swift */; };
+		0D0E0E39C55576E97424B06F /* VoiceCaptureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B3EE99212B4082D6F2557B /* VoiceCaptureService.swift */; };
+		1F75E42A99B7AEF5DDDCA4A0 /* NotesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F4BBFED8403748049E58BA /* NotesStore.swift */; };
+		247237B47591D61AE6C97182 /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9895C3A7236B9628928A29B9 /* RecordButton.swift */; };
+		287EC3B691A0F4A277B5B879 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF5CE955B8C814E3EE93CC2C /* AVFoundation.framework */; };
+		2E5330CE2B402DBDE53F82F6 /* WaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADB28BDECCF1AB7837C5A78 /* WaveformView.swift */; };
+		355C1E3EEF1B7573617A4908 /* MacCaptureListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA6EC8FCF1D14F0807523E3 /* MacCaptureListView.swift */; };
+		397CA57BEA462428298E0622 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26BCA406B678CE734C36D861 /* SwiftUI.framework */; };
+		49FBA1B73A8205576D49F5F7 /* MacRecordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30CB67B3D58863F889A3E36 /* MacRecordView.swift */; };
+		764712E29799648373A048BF /* CrispMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB0E405470F392EBB2431A56 /* CrispMacApp.swift */; };
+		7DCEA94DF22BB9F3141EE2EC /* AudioPlayerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E384EE6DB497F2FC4CEF61A /* AudioPlayerService.swift */; };
+		8B97AD09498E71D1C478398F /* MacCaptureDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D4EA266424F42F1328511AF /* MacCaptureDetailView.swift */; };
+		CD2E9519A9AA38082EBF49CF /* CaptureNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF0F68F1BC3AAB95D6FCDCB /* CaptureNote.swift */; };
+		D02C0F347A990736B1AEE7DA /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5401C69FC2A9A58AD78C6CE0 /* Speech.framework */; };
+		DF64C1EF7002396286A87649 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF4FB8567508EAF19DAA279 /* AppKit.framework */; };
+		FE2847E82E5C18BF094765C9 /* MacContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9176083D0C54A25079B6289 /* MacContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0DA6EC8FCF1D14F0807523E3 /* MacCaptureListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacCaptureListView.swift; sourceTree = "<group>"; };
+		1E384EE6DB497F2FC4CEF61A /* AudioPlayerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayerService.swift; sourceTree = "<group>"; };
+		2174BC1D2BD02C9C52D3B431 /* CrispMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrispMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26BCA406B678CE734C36D861 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		4D4EA266424F42F1328511AF /* MacCaptureDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacCaptureDetailView.swift; sourceTree = "<group>"; };
+		5401C69FC2A9A58AD78C6CE0 /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = System/Library/Frameworks/Speech.framework; sourceTree = SDKROOT; };
+		8DC60652250C86785D56B441 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9895C3A7236B9628928A29B9 /* RecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
+		A9176083D0C54A25079B6289 /* MacContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacContentView.swift; sourceTree = "<group>"; };
+		AAF0F68F1BC3AAB95D6FCDCB /* CaptureNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureNote.swift; sourceTree = "<group>"; };
+		AB0E405470F392EBB2431A56 /* CrispMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrispMacApp.swift; sourceTree = "<group>"; };
+		BADB28BDECCF1AB7837C5A78 /* WaveformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformView.swift; sourceTree = "<group>"; };
+		BDF4FB8567508EAF19DAA279 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C1B3EE99212B4082D6F2557B /* VoiceCaptureService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceCaptureService.swift; sourceTree = "<group>"; };
+		D30CB67B3D58863F889A3E36 /* MacRecordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacRecordView.swift; sourceTree = "<group>"; };
+		E1F4BBFED8403748049E58BA /* NotesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesStore.swift; sourceTree = "<group>"; };
+		E90E4494A20CF8F7DA39D613 /* DesignTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTokens.swift; sourceTree = "<group>"; };
+		EF5CE955B8C814E3EE93CC2C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6ED4525F4FC152A12B3DA071 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				397CA57BEA462428298E0622 /* SwiftUI.framework in Frameworks */,
+				DF64C1EF7002396286A87649 /* AppKit.framework in Frameworks */,
+				287EC3B691A0F4A277B5B879 /* AVFoundation.framework in Frameworks */,
+				D02C0F347A990736B1AEE7DA /* Speech.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		494764DE4CA0B35AD04F595A /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModels;
+			path = Crisp/Sources/ViewModels;
+			sourceTree = "<group>";
+		};
+		501283FE9E8BD97F9F2FFDDE = {
+			isa = PBXGroup;
+			children = (
+				C15DFD6049DFCDEB6C67BBBB /* Components */,
+				E4089EBED56ED2338C05FEB4 /* Models */,
+				F37F1CE29D71A9CAAAFF064C /* Resources */,
+				B94FA244CC639DAAF3E59D30 /* Services */,
+				681A3C27296C771A464F3934 /* Sources */,
+				494764DE4CA0B35AD04F595A /* ViewModels */,
+				8BCD69EDDE0E3FF9BF80E2DC /* Frameworks */,
+				9EF9EC74D04484EC7195E6EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		681A3C27296C771A464F3934 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				AB0E405470F392EBB2431A56 /* CrispMacApp.swift */,
+				4D4EA266424F42F1328511AF /* MacCaptureDetailView.swift */,
+				0DA6EC8FCF1D14F0807523E3 /* MacCaptureListView.swift */,
+				A9176083D0C54A25079B6289 /* MacContentView.swift */,
+				D30CB67B3D58863F889A3E36 /* MacRecordView.swift */,
+			);
+			name = Sources;
+			path = CrispMac/Sources;
+			sourceTree = "<group>";
+		};
+		8BCD69EDDE0E3FF9BF80E2DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BDF4FB8567508EAF19DAA279 /* AppKit.framework */,
+				EF5CE955B8C814E3EE93CC2C /* AVFoundation.framework */,
+				5401C69FC2A9A58AD78C6CE0 /* Speech.framework */,
+				26BCA406B678CE734C36D861 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9EF9EC74D04484EC7195E6EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2174BC1D2BD02C9C52D3B431 /* CrispMac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B94FA244CC639DAAF3E59D30 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1E384EE6DB497F2FC4CEF61A /* AudioPlayerService.swift */,
+				E1F4BBFED8403748049E58BA /* NotesStore.swift */,
+				C1B3EE99212B4082D6F2557B /* VoiceCaptureService.swift */,
+			);
+			name = Services;
+			path = Crisp/Sources/Services;
+			sourceTree = "<group>";
+		};
+		C15DFD6049DFCDEB6C67BBBB /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				9895C3A7236B9628928A29B9 /* RecordButton.swift */,
+				BADB28BDECCF1AB7837C5A78 /* WaveformView.swift */,
+			);
+			name = Components;
+			path = Crisp/Sources/Views/Components;
+			sourceTree = "<group>";
+		};
+		E4089EBED56ED2338C05FEB4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AAF0F68F1BC3AAB95D6FCDCB /* CaptureNote.swift */,
+				E90E4494A20CF8F7DA39D613 /* DesignTokens.swift */,
+			);
+			name = Models;
+			path = Crisp/Sources/Models;
+			sourceTree = "<group>";
+		};
+		F37F1CE29D71A9CAAAFF064C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8DC60652250C86785D56B441 /* Info.plist */,
+			);
+			name = Resources;
+			path = Crisp/Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C16B9F401CDAB13000953E05 /* CrispMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58A3E077D517782D2D009C9D /* Build configuration list for PBXNativeTarget "CrispMac" */;
+			buildPhases = (
+				5F474BD2B3562A2EED8D4A6C /* Sources */,
+				6ED4525F4FC152A12B3DA071 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrispMac;
+			productName = CrispMac;
+			productReference = 2174BC1D2BD02C9C52D3B431 /* CrispMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30A26D1AB6FCEB31D847DC2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = D732ABA738C43EEC8C005A81 /* Build configuration list for PBXProject "CrispMac" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 501283FE9E8BD97F9F2FFDDE;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C16B9F401CDAB13000953E05 /* CrispMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F474BD2B3562A2EED8D4A6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DCEA94DF22BB9F3141EE2EC /* AudioPlayerService.swift in Sources */,
+				CD2E9519A9AA38082EBF49CF /* CaptureNote.swift in Sources */,
+				764712E29799648373A048BF /* CrispMacApp.swift in Sources */,
+				00870BE6D851A0AA9C7C25A6 /* DesignTokens.swift in Sources */,
+				8B97AD09498E71D1C478398F /* MacCaptureDetailView.swift in Sources */,
+				355C1E3EEF1B7573617A4908 /* MacCaptureListView.swift in Sources */,
+				FE2847E82E5C18BF094765C9 /* MacContentView.swift in Sources */,
+				49FBA1B73A8205576D49F5F7 /* MacRecordView.swift in Sources */,
+				1F75E42A99B7AEF5DDDCA4A0 /* NotesStore.swift in Sources */,
+				247237B47591D61AE6C97182 /* RecordButton.swift in Sources */,
+				0D0E0E39C55576E97424B06F /* VoiceCaptureService.swift in Sources */,
+				2E5330CE2B402DBDE53F82F6 /* WaveformView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5ECAB7426CD22221F7E1CA6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		7831E48DC3423F1FE889541D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Crisp/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crisp.macos;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		B8A743AF1F5FEBDDD63EE384 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E675273FDEE0CC5566CBFC45 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGNING_REQUIRED = NO;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Crisp/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.crisp.macos;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58A3E077D517782D2D009C9D /* Build configuration list for PBXNativeTarget "CrispMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E675273FDEE0CC5566CBFC45 /* Debug */,
+				7831E48DC3423F1FE889541D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		D732ABA738C43EEC8C005A81 /* Build configuration list for PBXProject "CrispMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B8A743AF1F5FEBDDD63EE384 /* Debug */,
+				5ECAB7426CD22221F7E1CA6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30A26D1AB6FCEB31D847DC2F /* Project object */;
+}
