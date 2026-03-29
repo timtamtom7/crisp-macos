@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00870BE6D851A0AA9C7C25A6 /* DesignTokens.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90E4494A20CF8F7DA39D613 /* DesignTokens.swift */; };
+		0876531A2FFA89F4657FDE12 /* AIVoiceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A412CA9C2F9C3073EBDC4E45 /* AIVoiceService.swift */; };
 		0D0E0E39C55576E97424B06F /* VoiceCaptureService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B3EE99212B4082D6F2557B /* VoiceCaptureService.swift */; };
 		1F75E42A99B7AEF5DDDCA4A0 /* NotesStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1F4BBFED8403748049E58BA /* NotesStore.swift */; };
 		247237B47591D61AE6C97182 /* RecordButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9895C3A7236B9628928A29B9 /* RecordButton.swift */; };
@@ -22,6 +23,7 @@
 		BB80EE75D670034F462E6CAF /* MacWaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2FA1142C4FE856D90367A1D /* MacWaveformView.swift */; };
 		CD2E9519A9AA38082EBF49CF /* CaptureNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAF0F68F1BC3AAB95D6FCDCB /* CaptureNote.swift */; };
 		D02C0F347A990736B1AEE7DA /* Speech.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5401C69FC2A9A58AD78C6CE0 /* Speech.framework */; };
+		D547AC6204DE2C2670033076 /* NaturalLanguage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFD379936C8EA2CD31C7F9EC /* NaturalLanguage.framework */; };
 		DF64C1EF7002396286A87649 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDF4FB8567508EAF19DAA279 /* AppKit.framework */; };
 		FE2847E82E5C18BF094765C9 /* MacContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9176083D0C54A25079B6289 /* MacContentView.swift */; };
 /* End PBXBuildFile section */
@@ -35,6 +37,7 @@
 		5401C69FC2A9A58AD78C6CE0 /* Speech.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Speech.framework; path = System/Library/Frameworks/Speech.framework; sourceTree = SDKROOT; };
 		8DC60652250C86785D56B441 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		9895C3A7236B9628928A29B9 /* RecordButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordButton.swift; sourceTree = "<group>"; };
+		A412CA9C2F9C3073EBDC4E45 /* AIVoiceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIVoiceService.swift; sourceTree = "<group>"; };
 		A9176083D0C54A25079B6289 /* MacContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacContentView.swift; sourceTree = "<group>"; };
 		AAF0F68F1BC3AAB95D6FCDCB /* CaptureNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureNote.swift; sourceTree = "<group>"; };
 		AB0E405470F392EBB2431A56 /* CrispMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrispMacApp.swift; sourceTree = "<group>"; };
@@ -46,6 +49,7 @@
 		E1F4BBFED8403748049E58BA /* NotesStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesStore.swift; sourceTree = "<group>"; };
 		E90E4494A20CF8F7DA39D613 /* DesignTokens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTokens.swift; sourceTree = "<group>"; };
 		EF5CE955B8C814E3EE93CC2C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FFD379936C8EA2CD31C7F9EC /* NaturalLanguage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NaturalLanguage.framework; path = System/Library/Frameworks/NaturalLanguage.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 				DF64C1EF7002396286A87649 /* AppKit.framework in Frameworks */,
 				287EC3B691A0F4A277B5B879 /* AVFoundation.framework in Frameworks */,
 				D02C0F347A990736B1AEE7DA /* Speech.framework in Frameworks */,
+				D547AC6204DE2C2670033076 /* NaturalLanguage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,11 +91,21 @@
 				E4089EBED56ED2338C05FEB4 /* Models */,
 				F37F1CE29D71A9CAAAFF064C /* Resources */,
 				B94FA244CC639DAAF3E59D30 /* Services */,
+				627FF4AB2621D5EEF999A144 /* Services */,
 				681A3C27296C771A464F3934 /* Sources */,
 				494764DE4CA0B35AD04F595A /* ViewModels */,
 				8BCD69EDDE0E3FF9BF80E2DC /* Frameworks */,
 				9EF9EC74D04484EC7195E6EB /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		627FF4AB2621D5EEF999A144 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A412CA9C2F9C3073EBDC4E45 /* AIVoiceService.swift */,
+			);
+			name = Services;
+			path = CrispMac/Services;
 			sourceTree = "<group>";
 		};
 		66A733AE1898F7F0902543FF /* Components */ = {
@@ -120,6 +135,7 @@
 			children = (
 				BDF4FB8567508EAF19DAA279 /* AppKit.framework */,
 				EF5CE955B8C814E3EE93CC2C /* AVFoundation.framework */,
+				FFD379936C8EA2CD31C7F9EC /* NaturalLanguage.framework */,
 				5401C69FC2A9A58AD78C6CE0 /* Speech.framework */,
 				26BCA406B678CE734C36D861 /* SwiftUI.framework */,
 			);
@@ -226,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0876531A2FFA89F4657FDE12 /* AIVoiceService.swift in Sources */,
 				7DCEA94DF22BB9F3141EE2EC /* AudioPlayerService.swift in Sources */,
 				CD2E9519A9AA38082EBF49CF /* CaptureNote.swift in Sources */,
 				764712E29799648373A048BF /* CrispMacApp.swift in Sources */,

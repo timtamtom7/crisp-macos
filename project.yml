@@ -10,6 +10,7 @@ targets:
     platform: macOS
     sources:
       - path: CrispMac/Sources
+      - path: CrispMac/Services
       - path: Crisp/Sources/Models
       - path: Crisp/Sources/Services
       - path: Crisp/Sources/ViewModels
@@ -28,3 +29,4 @@ targets:
       - sdk: AppKit.framework
       - sdk: AVFoundation.framework
       - sdk: Speech.framework
+      - sdk: NaturalLanguage.framework
