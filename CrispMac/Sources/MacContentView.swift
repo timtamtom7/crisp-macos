@@ -50,6 +50,8 @@ struct MacContentView: View {
                 ) {
                     selectedTab = .capture
                 }
+                .accessibilityLabel("Capture tab")
+                .accessibilityHint("Navigate to voice recording")
 
                 TabButton(
                     title: "Library",
@@ -58,6 +60,8 @@ struct MacContentView: View {
                 ) {
                     selectedTab = .library
                 }
+                .accessibilityLabel("Library tab")
+                .accessibilityHint("Navigate to your saved recordings")
             }
             .padding(.horizontal, 8)
             .padding(.top, 8)

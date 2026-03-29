@@ -87,6 +87,8 @@ struct MacCaptureListView: View {
                         showingDetail = false
                     }
                 }
+                .accessibilityLabel("Close detail panel")
+                .accessibilityHint("Tap to dismiss the detail view")
 
             // Detail panel
             MacCaptureDetailView(

@@ -8,6 +8,7 @@ struct DesignTokens {
     static let accentOrange = Color(hex: "#f07c3d")
     static let textPrimary = Color(hex: "#f5f5f7")
     static let textSecondary = Color(hex: "#8b8b8e")
+    static let error = Color(hex: "#e05d5d")
 
     static let radiusSm: CGFloat = 6
     static let radiusMd: CGFloat = 12

@@ -72,6 +72,8 @@ struct MacRecordView: View {
                         handleRecordTap()
                     }
                     .disabled(!isAuthorized)
+                    .accessibilityLabel(voiceService.isRecording ? "Stop recording" : "Start recording")
+                    .accessibilityHint(voiceService.isRecording ? "Stops voice capture" : "Begins recording your voice")
 
                     if !isAuthorized {
                         Text("Microphone access required")

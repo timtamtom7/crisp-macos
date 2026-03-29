@@ -25,6 +25,8 @@ struct MacCaptureDetailView: View {
                         .clipShape(Circle())
                 }
                 .buttonStyle(.plain)
+                .accessibilityLabel("Close")
+                .accessibilityHint("Dismiss this view")
 
                 Spacer()
 
@@ -37,12 +39,14 @@ struct MacCaptureDetailView: View {
                 Button(action: onDelete) {
                     Image(systemName: "trash")
                         .font(.system(size: 12, weight: .medium))
-                        .foregroundColor(Color(hex: "#e05d5d"))
+                        .foregroundColor(DesignTokens.error)
                         .frame(width: 28, height: 28)
                         .background(DesignTokens.surface)
                         .clipShape(Circle())
                 }
                 .buttonStyle(.plain)
+                .accessibilityLabel("Delete capture")
+                .accessibilityHint("Permanently removes this voice note")
             }
             .padding(.horizontal, 20)
             .padding(.vertical, 16)
@@ -105,6 +109,8 @@ struct MacCaptureDetailView: View {
                     .cornerRadius(8)
                 }
                 .buttonStyle(.plain)
+                .accessibilityLabel("Copy transcription")
+                .accessibilityHint("Copies the transcription text to the clipboard")
 
                 // Edit button
                 Button(action: {
@@ -138,6 +144,8 @@ struct MacCaptureDetailView: View {
                     .cornerRadius(8)
                 }
                 .buttonStyle(.plain)
+                .accessibilityLabel(isEditing ? "Done editing" : "Edit transcription")
+                .accessibilityHint(isEditing ? "Saves your changes" : "Opens the text editor to modify the transcription")
 
                 Spacer()
             }
@@ -161,6 +169,8 @@ struct MacCaptureDetailView: View {
                     .clipShape(Circle())
             }
             .buttonStyle(.plain)
+            .accessibilityLabel(playerService.isPlaying ? "Pause audio" : "Play audio")
+            .accessibilityHint("Toggles audio playback")
 
             // Progress bar
             VStack(alignment: .leading, spacing: 4) {
